@@ -1,0 +1,24 @@
+# Created using wingetcreate 1.0.3.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+
+PackageIdentifier: rcmaehl.MSEdgeRedirect
+PackageVersion: 0.6.3.1
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.0.0
+InstallerSwitches:
+  Silent: /wingetinstall
+  SilentWithProgress: /wingetinstall
+UpgradeBehavior: install
+Installers:
+- Architecture: x64
+  InstallerType: exe
+  InstallerUrl: https://github.com/gnpaone/MSEdgeRedirect/releases/download/0.6.3.0/MSEdgeRedirect.exe
+  InstallerSha256: EC05CE69ADBB96E8B98E52FBD3916A7286CB5CA5382DE23E4D45705CEB84F909
+- Architecture: x86
+  InstallerType: exe
+  InstallerUrl: https://github.com/gnpaone/MSEdgeRedirect/releases/download/0.6.3.0/MSEdgeRedirect_x86.exe
+  InstallerSha256: 17DD6D7A1D07D7ECCCE5D085E79823B8537DC1CB7BE8C5C94E2C235A3B4BC04C
+ManifestType: installer
+ManifestVersion: 1.1.0
+
